@@ -1,0 +1,118 @@
+body{
+    // background: red !important;
+    font-family: $source-regular;
+}
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+// transition
+@mixin transition($time) {
+    -moz-transition: all $time ease;
+    -o-transition: all $time ease;
+    -webkit-transition: all $time ease;
+    transition: all $time ease;
+}
+// left transition
+@mixin left-transition($time) {
+    -moz-transition: left $time ease-in-out;
+    -o-transition: left $time ease-in-out;
+    -webkit-transition: left $time ease-in-out;
+    transition: left $time ease-in-out;
+}
+// Mixin font size RM
+@function calculateRem($size) {
+    $remSize: $size / $baseFont;
+    // $remSize: $size / 1.37vw;
+    @return $remSize * 1rem;
+}
+// font Size
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+}
+// Height Width
+@mixin calcHeightWidth($height,
+$width) {
+    height: $height;
+    height: calculateRem($height);
+    width: $width;
+    width: calculateRem($width);
+    display: inline-block;
+}
+// Fonts
+@mixin fontFamily($family,
+$size,
+$lineHeight,
+$color) {
+    font-family: $family;
+    font-size: $size;
+    font-size: calculateRem($size);
+    line-height: $lineHeight;
+    color: $color;
+}
+// Padding
+@mixin calcPadding($top,
+$right,
+$bottom,
+$left) {
+    padding-top: $top;
+    padding-top: calculateRem($top);
+    padding-right: $right;
+    padding-right: calculateRem($right);
+    padding-bottom: $bottom;
+    padding-bottom: calculateRem($bottom);
+    padding-left: $left;
+    padding-left: calculateRem($left);
+}
+// Margin
+@mixin calcMargin($top,
+$right,
+$bottom,
+$left) {
+    margin-top: $top;
+    margin-top: calculateRem($top);
+    margin-right: $right;
+    margin-right: calculateRem($right);
+    margin-bottom: $bottom;
+    margin-bottom: calculateRem($bottom);
+    margin-left: $left;
+    margin-left: calculateRem($left);
+}
+// Background 
+@mixin background($path,
+$repeat,
+$size,
+$height,
+$width,
+$heightRem,
+$widthRem) {
+    background: {
+        image: url($path);
+        size: $size;
+        repeat: $repeat;
+    }
+    display: inline-block;
+    @if $heightRem !=0 {
+        height: $heightRem;
+        height: calculateRem($heightRem)
+    }
+    @else {
+        height: $height;
+    }
+    @if $widthRem !=0 {
+        width: $widthRem;
+        width: calculateRem($widthRem);
+    }
+    @else {
+        width: $width;
+    }
+}
+.alert-danger{
+    margin-top:10px !important;
+} 
+.input-pid{
+    height: 40px;
+}

@@ -1,0 +1,28 @@
+@import '~sass/variables';
+@import '~sass/mixins';
+
+.content{
+    padding-top:0 !important;
+  }
+  .cursor-point{
+    cursor: pointer;
+  }
+  .ellipsis-span{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: calculateRem(150px);
+    display: inline-block;
+  }
+  .image-logo-wrapper{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    img{
+      height: calculateRem(50px);
+      padding: 0px 0;
+    }
+  }
+
+
+

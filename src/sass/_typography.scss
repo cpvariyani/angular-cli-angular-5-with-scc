@@ -1,0 +1,31 @@
+
+// source
+@font-face {
+	font-family: 'sourceregular';
+	src: url('#{$font-path}/sourcesanspro-regular.eot');
+	src: url('#{$font-path}/sourcesanspro-regular.eot?#iefix') format('embedded-opentype'),
+		url('#{$font-path}/sourcesanspro-regular.woff2') format('woff2'),
+		url('#{$font-path}/sourcesanspro-regular.woff') format('woff'),
+		url('#{$font-path}/sourcesanspro-regular.ttf') format('truetype'),
+		url('#{$font-path}/sourcesanspro-regular.svg#sourcesanspro-regular') format('svg');
+}
+
+@font-face {
+	font-family: 'sourcebold';
+	src: url('#{$font-path}/sourcesanspro-bold.eot');
+	src: url('#{$font-path}/sourcesanspro-bold.eot?#iefix') format('embedded-opentype'),
+		url('#{$font-path}/sourcesanspro-bold.woff2') format('woff2'),
+		url('#{$font-path}/sourcesanspro-bold.woff') format('woff'),
+		url('#{$font-path}/sourcesanspro-bold.ttf') format('truetype'),
+		url('#{$font-path}/sourcesanspro-bold.svg#sourcesanspro-bold') format('svg');
+}
+
+@font-face {
+	font-family: 'sourcesemibold';
+	src: url('#{$font-path}/sourcesanspro-semibold.eot');
+	src: url('#{$font-path}/sourcesanspro-semibold.eot?#iefix') format('embedded-opentype'),
+		url('#{$font-path}/sourcesanspro-semibold.woff2') format('woff2'),
+		url('#{$font-path}/sourcesanspro-semibold.woff') format('woff'),
+		url('#{$font-path}/sourcesanspro-semibold.ttf') format('truetype'),
+		url('#{$font-path}/sourcesanspro-semibold.svg#sourcesanspro-semibold') format('svg');
+}

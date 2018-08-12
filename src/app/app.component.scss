@@ -1,0 +1,26 @@
+@import '~sass/variables';
+
+.master-main-container{
+    .master-header{
+        height: 20vh;
+        position: relative;
+        background: #ffffff;
+        .logo-image{
+            width: 50%;
+            height: 75%;
+            overflow: auto;
+            margin: auto;
+            position: absolute;
+            top: 0; left: 0; bottom: 0; right: 0;
+        }
+    }
+    .master-footer{
+        height: 10vh;
+        background: #ffffff;
+    }
+   
+   
+}
+.no-padding{
+    padding: 0px;
+}
